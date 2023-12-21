@@ -1,7 +1,6 @@
 from flask import Flask
-
-from api import user
 from db import db
+from controllers import user
 
 app = Flask(__name__)
 app.register_blueprint(user.bp)
